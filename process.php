@@ -33,7 +33,7 @@ $loggedIn= true;
 	echo "Login successful!";
 
 $accts =<<< EOF
-Select * from postgresql-transparent-57730; 
+Select * from Accounts; 
 EOF;
 
 if(!$accts){
