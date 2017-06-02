@@ -1,3 +1,8 @@
+<html>
+<head>
+<title>The database connection file</title>
+</head>
+<body>
 <?php
 # This function reads your DATABASE_URL configuration automatically set by Heroku
 # the return value is a string that will work with pg_connect
@@ -15,5 +20,7 @@ if (!$db) {
 else{
 echo "DB Connection successful";
 }
- 
+
 ?>
+</body>
+</html>
