@@ -16,6 +16,24 @@ $db = new PDO($dsn);
   
   if($db){
   echo "Connection successful";
+      
+      $query = "select * from salesforce.account";
+      
+
+      $result = $db->query($query);
+
+      while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+    
+          echo "<tr>";
+    
+          echo "<td>" . $row["Id"] . "</td>";
+    
+          echo "<td>" . htmlspecialchars($row["Name"]) . "</td>";
+   
+          echo "</tr>";
+}
+$result->closeCursor();
+      
   }
   
   else{
