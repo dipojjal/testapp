@@ -4,35 +4,26 @@
 </head>
 <body>
 <?php
+<?php
 
-$dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Herrera\Pdo\PdoServiceProvider(),
-               array(
-                   'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
-                   'pdo.username' => $dbopts["user"],
-                   'pdo.password' => $dbopts["pass"]
-               )
-);
+$dsn = "pgsql:"
+    . "host=ec2-50-19-218-160.compute-1.amazonaws.com;"
+    . "dbname=d1vaup90suifim;"
+    . "user=qlrdqqoimqwffm;"
+    . "port=5432;"
+    . "sslmode=require;"
+    . "password=b2987c12187c41f2054ed19441d973424761bf5d67b34eec665381d0e3c9deb2";
 
-/*
-# This function reads your DATABASE_URL configuration automatically set by Heroku
-# the return value is a string that will work with pg_connect
-function pg_connection_string() {
-  return "dbname=delibg7376jbnr host=ec2-23-23-234-118.compute-1.amazonaws.com port=5432 user=bmgnjpnaetiyzq password=b69bb793b59467cec59c95f212291d07d48053a91eb9e8fd40d990dee914c369 sslmode=require";
-}
- 
-# Establish db connection
-$db = pg_connect(pg_connection_string());
-if (!$db) {
-    echo "Database connection error."
-    exit;
-}
-
-else{
-echo "DB Connection successful";
-}
-*/
-
+$db = new PDO($dsn);
+  
+  if($db){
+  echo "Connection successful";
+  }
+  
+  else{
+  echo "Connection failed";
+  }
+  
 ?>
 </body>
 </html>
