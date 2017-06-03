@@ -4,8 +4,6 @@
 </head>
 <body>
 <?php
-<?php
-
 $dsn = "pgsql:"
     . "host=ec2-50-19-218-160.compute-1.amazonaws.com;"
     . "dbname=d1vaup90suifim;"
