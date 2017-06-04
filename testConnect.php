@@ -13,11 +13,8 @@ $dsn = "pgsql:"
     . "password=b2987c12187c41f2054ed19441d973424761bf5d67b34eec665381d0e3c9deb2";
 
 $db = new PDO($dsn);
-  
-  if($db){
-  echo "Connection successful";
       
-      $query = "select * from salesforce.Account";
+      $query = "select Id, Name from salesforce.Account";
       
       $result = $db->query($query);
 
@@ -30,14 +27,8 @@ $db = new PDO($dsn);
           echo "<td>" . htmlspecialchars($row["Name"]) . "</td>";
    
           echo "</tr>";
-}
+
 $result->closeCursor();
-      
-  }
-  
-  else{
-  echo "Connection failed";
-  }
 
 ?>
 </body>
