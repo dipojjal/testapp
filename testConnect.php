@@ -38,8 +38,6 @@ $result->closeCursor();
   else{
   echo "Connection failed";
   }
-    
-}
 
 ?>
 </body>
