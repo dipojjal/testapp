@@ -22,9 +22,9 @@ $db = new PDO($dsn);
     
           echo "<tr>";
     
-          echo "<td>" . $row["Id"] . "</td>";
+          echo "<td>" . $row["Account.Id"] . "</td>";
     
-          echo "<td>" . htmlspecialchars($row["Name"]) . "</td>";
+          echo "<td>" . htmlspecialchars($row["Account.Name"]) . "</td>";
    
           echo "</tr>";
       }
