@@ -122,7 +122,7 @@ span.psw {
 </style>
 <body>
 
-<h2>Modal Login Form</h2>
+<center><h2>Product Management System Login</h2></center>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
