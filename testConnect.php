@@ -17,9 +17,8 @@ $db = new PDO($dsn);
   if($db){
   echo "Connection successful";
       
-      $query = "select * from account";
+      $query = "select * from salesforce.account";
       
-
       $result = $db->query($query);
 
       while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
