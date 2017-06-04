@@ -27,9 +27,10 @@ $db = new PDO($dsn);
           echo "<td>" . htmlspecialchars($row["Name"]) . "</td>";
    
           echo "</tr>";
-
+      }
 $result->closeCursor();
-
+      
+    
 ?>
 </body>
 </html>
