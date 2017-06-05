@@ -2,8 +2,8 @@
 <style>
 .button {
   display: inline-block;
-  padding: 75px 105px;
-  font-size: 24px;
+  padding: 65px 95px;
+  font-size: 19px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -11,20 +11,20 @@
   color: #fff;
   background-color: #4CAF50;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 9px #999;
 }
 
 #d {
     border-radius: 5px;
     background-color: #5CE4F3;
-    padding: 25px;
+    padding: 20px;
 	
 }
 #d1 {
     border-radius: 5px;
  
-    padding: 25px;
+    padding: 20px;
 }
 
 .button:hover {background-color: #3e8e41}
