@@ -15,7 +15,7 @@ $pg_conn = pg_connect(pg_connection_string_from_database_url());
 $prodName=$_POST["searchText"];
 echo $prodName;
 
-$result = pg_query($pg_conn, "SELECT name, sfid, isactive, country__c, state__c FROM salesforce.Product2". "where name like % '$prodName' %");
+$result = pg_query($pg_conn, "SELECT name, sfid, isactive, country__c, state__c FROM salesforce.Product2 where name=$prodName;");
 print "<pre>\n";
 
   print "Records in the Products:\n";
