@@ -2,8 +2,8 @@
 <style>
 .button {
   display: inline-block;
-  padding: 65px 95px;
-  font-size: 19px;
+  padding: 75px 105px;
+  font-size: 27px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -11,7 +11,7 @@
   color: #fff;
   background-color: #4CAF50;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
