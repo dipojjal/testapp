@@ -13,6 +13,7 @@ function pg_connection_string_from_database_url() {
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
 $prodName=$_POST["searchText"];
+echo $prodName;
 
 $result = pg_query($pg_conn, "SELECT Id, Name, sfid, isactive, country__c, state__c FROM salesforce.Product2 Where Name= $prodName");
 print "<pre>\n";
