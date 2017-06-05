@@ -74,15 +74,14 @@ legend  {color: red; size: 50px;}
 
 <body>
 <div>
-<form>
+<form name="searchProd" method= "POST" action= "SearchedList.php">
 <fieldset>
     <legend><b>Search Product</b></legend>
 	<div>
 <b>Product ID</b>
 
   <input type="text" id="s" name="search" placeholder="Search..">
-
-<button class="button"><span>Search</span></button>
+<input type="Submit" class="button"><span>Search</span></button>
 </fieldset>
 
 </form>
