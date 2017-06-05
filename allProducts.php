@@ -11,8 +11,8 @@ function pg_connection_string_from_database_url() {
 }
 
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
-
-$result = pg_query($pg_conn, "SELECT Name FROM salesforce.Account");
+$prodName=$_POST["name"];
+$result = pg_query($pg_conn, "SELECT Id, Name, sfid, isactive, country__c, state__c FROM salesforce.Product2 Where Name= $prodName");
 print "<pre>\n";
 if (!pg_num_rows($result)) {
   print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
@@ -21,6 +21,7 @@ if (!pg_num_rows($result)) {
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
+
 ?>
 </body>
 </html>
