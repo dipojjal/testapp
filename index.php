@@ -128,7 +128,7 @@ span.psw {
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" name="frmLogin" action="process.php" method="POST">
+  <form class="modal-content animate" name="frmLogin" action="productFirstPage.php" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="avatar2.png" alt="Avatar" class="avatar">
@@ -140,7 +140,8 @@ span.psw {
       <br/>
       <label><b>Password</b></label> &nbsp; &nbsp; <input type="password" placeholder="Enter Password" align="center" name="pswd" required>
       <br/>
-      <button type="submit">Login</button> &nbsp; &nbsp; <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="submit">Login</button> &nbsp; &nbsp; 
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <br/>
       <input type="checkbox" checked="checked"> Remember me
     </div>
