@@ -34,6 +34,11 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+form {
+    display: inline;
+}
+
 </style>
 </head>
 <body style="background-color: white;">
