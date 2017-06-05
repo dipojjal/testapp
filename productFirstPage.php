@@ -52,11 +52,13 @@ function pg_connection_string_from_database_url() {
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
 $result = pg_query($pg_conn, "SELECT username, password FROM salesforce.Heroku_User__c where username=$user");
+$rows = pg_num_rows($result);
+
 print "<pre>\n";
-if (!$result) {
+if (!$rows) {
   print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
 } else {
-  print "Records in the Accounts:\n";
+  print "Records in the Users:\n";
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
