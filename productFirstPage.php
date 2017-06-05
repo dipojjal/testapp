@@ -39,7 +39,7 @@
 <body style="background-color: white;">
 <?php
 
-$user = $_POST["uname"];
+$usr = $_POST["uname"];
 $pwd= $_POST["pswd"];
 
 # This function reads your DATABASE_URL config var and returns a connection
@@ -51,12 +51,12 @@ function pg_connection_string_from_database_url() {
 
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
-$result = pg_query($pg_conn, "SELECT username, password FROM salesforce.Heroku_User__c where username=$user");
+$result = pg_query($pg_conn, "SELECT username, password FROM salesforce.Heroku_User__c where username=$usr");
 $rows = pg_num_rows($result);
 
 print "<pre>\n";
-if (!$rows) {
-  print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
+if ($rows<1) {
+  print("User not found!");
 } else {
   print "Records in the Users:\n";
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
