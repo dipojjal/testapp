@@ -38,6 +38,8 @@
 </head>
 <body style="background-color: white;">
 
+<?php
+if($_POST["uname"] = "dipojjal" && ($_POST["pswd"] = "creative")){
 <div id="d"><center>
 <h1>Product Management</h1></center></div>
 <div id="d1"><center>
@@ -46,6 +48,9 @@
 <button class="button">Update Product</button>
 <button class="button">Delete Product</button></center>
 </div>
+}
+?>
 
+else
 <body>
 </html>
