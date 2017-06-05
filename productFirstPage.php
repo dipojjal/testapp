@@ -39,8 +39,8 @@
 <body style="background-color: white;">
 <?php
 
-$user = $_POST("uname");
-$pwd= $_POST("pswd");
+$user = $_POST["uname"];
+$pwd= $_POST["pswd"];
 
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
