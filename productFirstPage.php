@@ -41,10 +41,23 @@
 <div id="d"><center>
 <h1>Product Management</h1></center></div>
 <div id="d1"><center>
-<button class="button">Search Product</button>
-<button class="button">Create Product</button></br></br>
-<button class="button">Update Product</button>
-<button class="button">Delete Product</button></center>
+
+<form name= "Search" method= "POST" action= "SearchProduct.php"
+<button type="Submit" class="button" >Search Product</button>
+</form>
+
+<form name="Create" method="POST" action="createProduct.php">
+<button type="Submit" class="button">Create Product</button></br></br>
+</form>
+
+<form name= "Update" method="POST" action="ProductUpdate.php">
+<button type="Submit" class="button">Update Product</button>
+</form>
+
+<form name= "Delete" method="POST" action="DeleteProduct.php">
+<button type="Submit" class="button">Delete Product</button></center>
+</form>
+
 </div>
 
 <body>
