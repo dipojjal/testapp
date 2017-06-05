@@ -60,6 +60,7 @@ if (!pg_num_rows($result)) {
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
+?>
 
 <div id="d"><center>
 <h1>Product Management</h1></center></div>
@@ -69,8 +70,6 @@ print "\n";
 <button class="button">Update Product</button>
 <button class="button">Delete Product</button></center>
 </div>
-
-?>
 
 <body>
 </html>
