@@ -19,7 +19,7 @@ $result = pg_query($pg_conn, "SELECT name, sfid, isactive, country__c, state__c 
 print "<pre>\n";
 
   print "Records in the Products:\n";
-  while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
+  while ($row = pg_fetch_row($result)) { print("- $row[0] - $row[1] - $row[2]\n"); }
 
 print "\n";
 
