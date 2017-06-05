@@ -2,8 +2,6 @@
 
 <style>
 
-
-
 div {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -74,7 +72,7 @@ legend  {color: red; size: 50px;}
 
 <body>
 <div>
-<form name="searchProd" method= "POST" action= "SearchedList.php">
+<form name="searchProd" method= "POST" action= "allProducts.php">
 <fieldset>
     <legend><b>Search Product</b></legend>
 	<div>
