@@ -15,7 +15,7 @@ $pg_conn = pg_connect(pg_connection_string_from_database_url());
 $prodName=$_POST["searchText"];
 echo $prodName;
 
-$result = pg_query($pg_conn, "SELECT Name, sfid, isactive, country__c, state__c FROM salesforce.Product2 where Name=prodName;");
+$result = pg_query($pg_conn, "SELECT Name, sfid, isactive, country__c, state__c FROM salesforce.Product2 WHERE to_tsvector(bio) @@ to_tsquery('$prodName')");
 print "<pre>\n";
 
   print "Records in the Products:\n";
