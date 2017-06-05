@@ -80,7 +80,7 @@ legend  {color: red; size: 50px;}
 	<div>
 <b>Product ID</b>
 
-  <input type="text" id="s" name="search" placeholder="Search..">
+  <input type="text" name="searchText" placeholder="Search...">
 <input type="Submit" class="button"><span>Search</span></button>
 </fieldset>
 
