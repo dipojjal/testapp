@@ -42,7 +42,7 @@
 <h1>Product Management</h1></center></div>
 <div id="d1"><center>
 
-<form name= "Search" method= "POST" action= "SearchProduct.php"
+<form name= "Search" method= "POST" action= "SearchProduct.php">
 <button type="Submit" class="button" >Search Product</button>
 </form>
 
