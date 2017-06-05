@@ -17,12 +17,10 @@ echo $prodName;
 
 $result = pg_query($pg_conn, "SELECT Id, Name, sfid, isactive, country__c, state__c FROM salesforce.Product2 Where Name=".$prodName);
 print "<pre>\n";
-if (!pg_num_rows($result)) {
-  print("No products match your query.\n");
-} else {
-  print "Records in the Accounts:\n";
+
+  print "Records in the Products:\n";
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
-}
+
 print "\n";
 
 ?>
