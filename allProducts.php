@@ -20,7 +20,7 @@ if (!$result) {
   exit;
 }
   echo "<div class=\"table-responsive\">
-  <table class=\"table-hover\">";
+  <table class=\"table-hover\"> border=3px";
   echo "<tr>";
   echo "<th>ID</th>";
   echo "<th>NAME</th>";
