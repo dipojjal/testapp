@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url("C:\Users\an322069\Desktop\blue.jpg");
+    background-image: url("");
     
 }
 div {
@@ -83,11 +83,13 @@ legend  {color: red; size: 50px;}
 	<div>
 <b>Product ID</b>
 
-  <input type="text" id="s" name="search" placeholder="Search..">
+  <input type="text" name="prodId" placeholder="Enter product ID..." />
 
 <button class="button"><span>Delete</span></button>
-</fieldset>
 
+	</div>
+
+	</fieldset>
 </form>
 </div>
 </body>
