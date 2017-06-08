@@ -17,9 +17,8 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
-
 while ($row = pg_fetch_row($result)) {
-  echo "Name: $row[0]";
+  echo "Name: $row[0] ". "Id: $row[1] ". "Active: $row[2] ". "Country: $row[3] ". "State: $row[4]";
   echo "<br />\n";
 }
  
