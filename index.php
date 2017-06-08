@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form id="msform" action="productFirstPage.php" type="POST">
+<form id="msform" action="productFirstPage.php" method="POST">
    
   <fieldset>
     <h1 class="fs-heading" >Login to your account</h1>
