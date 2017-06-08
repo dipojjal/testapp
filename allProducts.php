@@ -20,7 +20,7 @@ if (!$result) {
   exit;
 }
   echo "<div class=\"table-responsive\">
-  <table class=\"table\">";
+  <table class=\"table-hover\">";
   echo "<tr>";
   echo "<th>ID</th>";
   echo "<th>NAME</th>";
@@ -28,16 +28,14 @@ if (!$result) {
   echo "<th>COUNTRY</th>";
   echo"<th>STATE</th>";
   echo "</tr>";
-  echo "</table>";
-  echo "</div>";
   
 while ($row = pg_fetch_row($result)) {
-  echo "ID: $row[0] ". "NAME: $row[1] ". "ACTIVE: $row[2] ". "COUNTRY: $row[3] ". "STATE: $row[4]";
-  echo "<br />\n";
+  echo "<tr>";
+  echo "<td>$row[0]</td>". "<td>$row[1]</td>". "<td>$row[2]</td>". "<td>$row[3]</td>". "<td>$row[4]</td>";
+  echo "</tr>";
 }
- 
-print "\n"; 
-
+  echo "</table>";
+  echo "</div>";
 ?>
 </body>
 </html>
