@@ -1,5 +1,7 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
 <title></title>
 </head>
 <body>
@@ -12,11 +14,22 @@ function pg_connection_string_from_database_url() {
 
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
- $result = pg_query($pg_conn, "SELECT Name, sfid, isactive, country__c, state__c FROM salesforce.Product2");
+ $result = pg_query($pg_conn, "SELECT sfid, Name, isactive, country__c, state__c FROM salesforce.Product2");
 if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
+  echo "<div class=\"table-responsive\">
+  <table class=\"table\">";
+  echo "<tr>";
+  echo "<th>ID</th>";
+  echo "<th>NAME</th>";
+  echo "<th>ACTIVE</th>";
+  echo "<th>COUNTRY</th>";
+  echo"<th>STATE</th>";
+  echo "</tr>";
+  echo "</table>";
+  
 while ($row = pg_fetch_row($result)) {
   echo "Name: $row[0] ". "Id: $row[1] ". "Active: $row[2] ". "Country: $row[3] ". "State: $row[4]";
   echo "<br />\n";
