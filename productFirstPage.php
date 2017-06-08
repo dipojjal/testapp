@@ -108,12 +108,25 @@ body {color: red; align-top:20%; font-family: "Times New Roman", Georgia, Serif;
 <center><h1><b><i>Product Management</i></b></h1></center>
 </div>
 
-<button class="btn products"><b>All Products</b></button>
-<button class="btn search"><b>Search</b></button>
-<button class="btn create"><b>Create</b></button>
-<button class="btn update"><b>Update</b></button>
-<button class="btn delete"><b>Delete</b></button>
-
+	<form name="prod_mgmt" method="POST" action="allProducts.php">
+	<button type="submit" class="btn products"><b>All Products</b></button>
+	</form>
+	
+	<form name="prod_mgmt" method="POST" action="SearchProduct.php">
+	<button type="submit" class="btn search"><b>Search</b></button>
+	</form>
+	
+	<form name="prod_mgmt" method="POST" action="createProduct.php">
+	<button type="submit" class="btn create"><b>Create</b></button>
+	</form>
+	
+	<form name="prod_mgmt" method="POST" action="ProductUpdate.php">
+	<button type="submit" class="btn update"><b>Update</b></button>
+	</form>
+	
+	<form name="prod_mgmt" method="POST" action="DeleteProduct.php">
+	<button type="submit" class="btn delete"><b>Delete</b></button>
+	</form>
 
 </body>
 </html>
