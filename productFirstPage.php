@@ -107,9 +107,11 @@ body {color: red; align-top:20%; font-family: "Times New Roman", Georgia, Serif;
 </style>
 </head>
 <body >
-<div>
-<center><h1><b><i>Product Management</i></b></h1></center>
-</div>
+<div class="container-fluid">
+
+	<div>
+		<center><h1><b><i>Product Management</i></b></h1></center>
+		</div>
 
 	<form name="prod_mgmt" method="POST" action="allProducts.php">
 	<button type="submit" class="btn products"><b>All Products</b></button>
@@ -130,6 +132,6 @@ body {color: red; align-top:20%; font-family: "Times New Roman", Georgia, Serif;
 	<form name="prod_mgmt" method="POST" action="DeleteProduct.php">
 	<button type="submit" class="btn delete"><b>Delete</b></button>
 	</form>
-
+</div>
 </body>
 </html>
