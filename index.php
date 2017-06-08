@@ -3,8 +3,8 @@
 <link rel = "stylesheet" type = "text/css" href = "myfile1.css" />
 </head>
 <body>
-<!-- multistep form -->
-<form id="msform">
+
+<form id="msform" action="productFirstPage.php" type="POST">
    
   <fieldset>
     <h1 class="fs-heading" >Login to your account</h1>
