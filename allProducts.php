@@ -29,6 +29,7 @@ if (!$result) {
   echo"<th>STATE</th>";
   echo "</tr>";
   echo "</table>";
+  echo "</div>";
   
 while ($row = pg_fetch_row($result)) {
   echo "ID: $row[0] ". "NAME: $row[1] ". "ACTIVE: $row[2] ". "COUNTRY: $row[3] ". "STATE: $row[4]";
