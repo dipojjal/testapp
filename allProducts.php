@@ -19,6 +19,7 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
+  echo "<center><h2>All Products List</h2></center>"
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
   echo "<th>ID</th>";
