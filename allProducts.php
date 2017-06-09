@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <title> All Products</title>
@@ -45,13 +46,13 @@ if (!$result) {
   echo "</table>";
   
 ?>
-  
-</body>
-  
+
 <script>
 $(document).ready(function(){
     $('#myTable').dataTable();
 });
 </script>
+  
+</body>
   
 </html>
