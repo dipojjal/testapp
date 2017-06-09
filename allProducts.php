@@ -19,7 +19,7 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
-  echo "<div class=\"container\"> <table class=\"table table-hover\">";
+  echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
   echo "<th>ID</th>";
   echo "<th>NAME</th>";
