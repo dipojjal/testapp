@@ -51,11 +51,12 @@ if (!$result) {
   
 ?>
   
+</body>
+  
 <script>
 $(document).ready(function(){
     $('#myTable').dataTable();
 });
 </script>
   
-</body>
 </html>
