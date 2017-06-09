@@ -7,17 +7,13 @@
 <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   
-<script>
-$(document).ready(function(){
-    $('#myTable').dataTable();
-});
-</script>
-  
 <title> All Products</title>
 </head>
 <body>
+  
+  
 <?php
-
+  
 function pg_connection_string_from_database_url() {
   extract(parse_url($_ENV["DATABASE_URL"]));
   return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
@@ -54,5 +50,12 @@ if (!$result) {
   echo "</div>";
   
 ?>
+  
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+  
 </body>
 </html>
