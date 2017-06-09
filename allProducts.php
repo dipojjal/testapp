@@ -19,23 +19,35 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
-  echo "<center><h2>All Products List</h2></center>"
-  echo "<div class=\"container\"> <table class=\"table table-striped\">";
+  echo "<center><h2>All Products List</h2></center>";
+  echo "<div class=\"container\">";
+	echo "<div class=\"row\">";
+  echo "<div class=\"table-responsive\">";
+  echo "<table class=\"table table-striped\">";
+  echo "<thead>";
   echo "<tr>";
-  echo "<th>ID</th>";
+  echo"<th>ID</th>";
   echo "<th>NAME</th>";
   echo "<th>ACTIVE</th>";
   echo "<th>COUNTRY</th>";
   echo"<th>STATE</th>";
   echo "</tr>";
-  
+  echo "</thead>";
+  echo "<tbody id=\"prodTable\">";
 while ($row = pg_fetch_row($result)) {
   echo "<tr>";
   echo "<td>$row[0]</td>". "<td>$row[1]</td>". "<td>$row[2]</td>". "<td>$row[3]</td>". "<td>$row[4]</td>";
   echo "</tr>";
 }
+  echo"</tbody>";
   echo "</table>";
   echo "</div>";
+  echo "<div class=\"col-md-12 text-center\">";
+  echo "<ul class=\"pagination pagination-lg pager\" id=\"myPager\"></ul>";
+  echo "</div>";
+	echo "</div>";
+  echo "</div>";
+  
 ?>
 </body>
 </html>
