@@ -2,7 +2,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
-<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+  
+<title> All Products</title>
 </head>
 <body>
 <?php
@@ -22,7 +33,7 @@ if (!$result) {
   echo "<center><h2>All Products List</h2></center>";
   
   echo "<div class=\"table-responsive\">";
-  echo "<table class=\"table table-striped\">";
+  echo "<table id= "myTable" class=\"table table-striped\">";
   echo "<thead>";
   echo "<tr>";
   echo"<th>ID</th>";
@@ -33,16 +44,13 @@ if (!$result) {
   echo "</tr>";
   echo "</thead>";
   echo "<tbody id=\"prodTable\">";
-while ($row = pg_fetch_row($result)) {
+  while ($row = pg_fetch_row($result)) {
   echo "<tr>";
   echo "<td>$row[0]</td>". "<td>$row[1]</td>". "<td>$row[2]</td>". "<td>$row[3]</td>". "<td>$row[4]</td>";
   echo "</tr>";
 }
   echo"</tbody>";
   echo "</table>";
-  echo "</div>";
-  echo "<div class=\"col-md-12 text-center\">";
-  echo "<ul class=\"pagination pagination-lg pager\" id=\"myPager\"></ul>";
   echo "</div>";
   
 ?>
