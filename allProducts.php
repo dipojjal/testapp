@@ -20,8 +20,7 @@ if (!$result) {
   exit;
 }
   echo "<center><h2>All Products List</h2></center>";
-  echo "<div class=\"container\">";
-	echo "<div class=\"row\">";
+  
   echo "<div class=\"table-responsive\">";
   echo "<table class=\"table table-striped\">";
   echo "<thead>";
@@ -44,7 +43,6 @@ while ($row = pg_fetch_row($result)) {
   echo "</div>";
   echo "<div class=\"col-md-12 text-center\">";
   echo "<ul class=\"pagination pagination-lg pager\" id=\"myPager\"></ul>";
-  echo "</div>";
   echo "</div>";
   
 ?>
