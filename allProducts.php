@@ -45,7 +45,6 @@ while ($row = pg_fetch_row($result)) {
   echo "<div class=\"col-md-12 text-center\">";
   echo "<ul class=\"pagination pagination-lg pager\" id=\"myPager\"></ul>";
   echo "</div>";
-	echo "</div>";
   echo "</div>";
   
 ?>
