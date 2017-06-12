@@ -44,14 +44,16 @@ if (!$result) {
 }
   echo"</tbody>";
   echo "</table>";
+
+  echo "<script>";
+echo "$(document).ready(function(){";
+    echo "$('#myTable').dataTable();";
+echo "});";
+echo "</script>";
   
 ?>
 
-<script>
-$(document).ready(function(){
-    $('#myTable').dataTable();
-});
-</script>
+
   
 </body>
   
