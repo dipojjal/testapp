@@ -18,7 +18,7 @@ if (!$result) {
 }
   echo"<div class=\"panel panel-default\">";
   
-  echo"<div class=\"panel-heading\">View All Products</div>";
+  echo"<div class=\"panel-heading\"><center><h1>View All Products</h1></center></div>";
   
   echo"<div class=\"panel-body\">";
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
