@@ -61,30 +61,41 @@ background-image:url("bg.jpg");
 <h1>Product Management</h1>
 <br /><br />
     
-    <button class="button"  style="background-color: #62E4CE;">
+    <form name="all-prods" action="allProducts.php" method="POST"><button class="button"  style="background-color: #62E4CE;">
     <span> <i class="fa fa-th-list" aria-hidden="true"></i> All Products </span>
     </button>
+    </form>
 
+    <form name="search-prods" action="SearchProduct.php" method="POST">
     <button class="button"  style="background-color: #A489F5;">
-        <span> <i class="fa fa-search" aria-hidden="true"></i>  Search </span>
+    <span> <i class="fa fa-search" aria-hidden="true"></i> Search </span>
     </button>
     </br></br>
+    </form>
 
+    <form name="create-prods" action="Product_Entry.php" method="POST">
     <button class="button" style="background-color: #FB648A;">
-        <span> <i class="fa fa-plus" aria-hidden="true"></i>  Create </span>
+        <span> <i class="fa fa-plus" aria-hidden="true"></i> Create </span>
     </button>
+    </form>
 
-    <button class="button"  style="background-color: #F98086;">
+    <form name="update-prods" action="ProductUpdate.php" method="POST">
+        <button class="button"  style="background-color: #F98086;">
         <span> <i class="fa fa-retweet" aria-hidden="true"></i>  Update </span>
     </button></br></br>
+    </form>
 
-    <button class="button"  style="background-color: #CBEB6A;">
-        <span> <i class="fa fa-trash" aria-hidden="true"></i>  Delete </span>
+    <form name="delete-prods" action="DeleteProduct.php" method="POST">
+        <button class="button"  style="background-color: #CBEB6A;">
+        <span> <i class="fa fa-trash" aria-hidden="true"></i> Delete </span>
     </button>
+    </form>
 
-    <button class="button"  style="background-color: #CBEB6A;">
+    <form name="delete-prods" action="DeleteProduct.php" method="POST">
+        <button class="button"  style="background-color: #CBEB6A;">
         <span> <i class="fa fa-usd" aria-hidden="true"></i>  Price Book</span>
     </button></br></br>
+    </form>
 
 </center>
 </body>
