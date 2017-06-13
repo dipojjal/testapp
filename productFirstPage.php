@@ -91,9 +91,9 @@ background-image:url("bg.jpg");
     </button>
     </form>
 
-    <form name="delete-prods" action="DeleteProduct.php" method="POST">
+    <form name="pricebook-prods" action="priceBookProduct.php" method="POST">
         <button class="button"  style="background-color: #CBEB6A;">
-        <span> <i class="fa fa-usd" aria-hidden="true"></i>  Price Book</span>
+        <span> <i class="fa fa-usd" aria-hidden="true"></i> Price Book</span>
     </button></br></br>
     </form>
 
