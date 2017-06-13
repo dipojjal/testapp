@@ -16,6 +16,11 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
+  echo"<div class=\"panel panel-default\">";
+  
+  echo"<div class=\"panel-heading\">View All Products</div>";
+  
+  echo"<div class=\"panel-body\">;
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
   echo "<th>ID</th>";
@@ -32,6 +37,8 @@ while ($row = pg_fetch_row($result)) {
 }
   echo "</table>";
   echo "</div>";
+  echo"</div>";
+  echo"</div>";
 ?>
 </body>
 </html>
