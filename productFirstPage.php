@@ -53,6 +53,10 @@ background-image:url("bg.jpg");
   opacity: 1;
   right: 0;
 }
+    
+    form{
+    display:inline;
+    }
 </style>
 </head>
 
