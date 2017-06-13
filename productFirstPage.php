@@ -60,12 +60,32 @@ background-image:url("bg.jpg");
 <center>
 <h1>Product Management</h1>
 <br /><br />
-<button class="button"  style="background-color: #62E4CE;"><span> <i class="fa fa-th-list" aria-hidden="true"></i> All Products </span></button>
-<button class="button"  style="background-color: #A489F5;"><span> <i class="fa fa-search" aria-hidden="true"></i>  Search </span></button></br></br>
-<button class="button" style="background-color: #FB648A;"><span> <i class="fa fa-plus" aria-hidden="true"></i>  Create </span></button>
-<button class="button"  style="background-color: #F98086;"><span> <i class="fa fa-retweet" aria-hidden="true"></i>  Update </span></button></br></br>
-<button class="button"  style="background-color: #CBEB6A;"><span> <i class="fa fa-trash" aria-hidden="true"></i>  Delete </span></button>
-<button class="button"  style="background-color: #CBEB6A;"><span> <i class="fa fa-usd" aria-hidden="true"></i>  Price Book</span></button></br></br>
+    
+    <button class="button"  style="background-color: #62E4CE;">
+    <span> <i class="fa fa-th-list" aria-hidden="true"></i> All Products </span>
+    </button>
+
+    <button class="button"  style="background-color: #A489F5;">
+        <span> <i class="fa fa-search" aria-hidden="true"></i>  Search </span>
+    </button>
+    </br></br>
+
+    <button class="button" style="background-color: #FB648A;">
+        <span> <i class="fa fa-plus" aria-hidden="true"></i>  Create </span>
+    </button>
+
+    <button class="button"  style="background-color: #F98086;">
+        <span> <i class="fa fa-retweet" aria-hidden="true"></i>  Update </span>
+    </button></br></br>
+
+    <button class="button"  style="background-color: #CBEB6A;">
+        <span> <i class="fa fa-trash" aria-hidden="true"></i>  Delete </span>
+    </button>
+
+    <button class="button"  style="background-color: #CBEB6A;">
+        <span> <i class="fa fa-usd" aria-hidden="true"></i>  Price Book</span>
+    </button></br></br>
+
 </center>
 </body>
 </html>
