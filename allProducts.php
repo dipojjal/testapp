@@ -20,7 +20,7 @@ if (!$result) {
   
   echo"<div class=\"panel-heading\">View All Products</div>";
   
-  echo"<div class=\"panel-body\">;
+  echo"<div class=\"panel-body\">";
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
   echo "<th>ID</th>";
