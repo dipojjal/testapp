@@ -76,7 +76,7 @@ function pg_connection_string_from_database_url() {
 
     $rows = pg_num_rows($searchedUser);
 
-    if($rows=0){
+    if($rows==0){
     echo "User not found";
         echo "<form name=\"goBack\" action=\"index.php\" method=\"POST\">";
         echo "<input type=\"submit\" name=\"Login\" class=\"next action-button\" value=\"Submit\" /> <br/> <br/>";
