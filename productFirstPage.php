@@ -3,7 +3,8 @@
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<style>
+<link rel = "stylesheet" type = "text/css" href = "myfile1.css" />
+    <style>
  
 body{
 background-image:url("bg.jpg");
@@ -75,14 +76,14 @@ function pg_connection_string_from_database_url() {
 
     $rows = pg_num_rows($searchedUser);
 
-    if($rows>0){
-    echo "User found";
-    }
-    
-    else{
+    if($rows=0){
     echo "User not found";
+        echo "<form name=\"goBack\" action=\"index.php\" method=\"POST\">";
+        echo "<input type=\"submit\" name=\"Login\" class=\"next action-button\" value=\"Submit\" /> <br/> <br/>";
+        echo"</form>";
     exit;
     }
+    
     ?>
     
 <center>
