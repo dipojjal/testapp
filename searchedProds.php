@@ -16,7 +16,7 @@ function pg_connection_string_from_database_url() {
 $varSearchedItem= $_POST['search'];
 
   $pg_conn = pg_connect(pg_connection_string_from_database_url());
-  $searchedProds = pg_query($pg_conn, "SELECT Id, sfid, Name, productcode, isactive, country__c, state__c, description FROM salesforce.Product2 where Name= '$varSearchedItem'");
+  $searchedProds = pg_query($pg_conn, "SELECT Id, sfid, Name, productcode, isactive, country__c, state__c, description FROM salesforce.Product2 where Name= '$varSearchedItem' || Id= '$varSearchedItem' || sfid= '$varSearchedItem' || productcode= '$varSearchedItem'");
 
   echo"<div class=\"panel panel-default\">";
   
