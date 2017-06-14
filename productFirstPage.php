@@ -11,9 +11,7 @@ background-image:url("bg.jpg");
  -moz-background-size: 100% 100%;           
          -o-background-size: 100% 100%;           
     -webkit-background-size: 100% 100%;           
-            background-size: 100% 100%;           
-
-       -moz-border-image: url("bg1.jpg") 0;    
+            background-size: 100% 100%;              
 }
 
 .button {
