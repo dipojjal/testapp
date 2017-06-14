@@ -75,7 +75,7 @@ function pg_connection_string_from_database_url() {
 
     $rows = pg_num_rows($searchedUser);
 
-    if($row>0){
+    if($rows>0){
     echo "User found";
     }
     
