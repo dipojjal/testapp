@@ -93,7 +93,7 @@ body {
 	<div>
 <b>Product ID</b>
 <form name="delete-prod" action="deleted.php" method="POST">
-  <input type="text" id="s" name="search" placeholder="Search..">
+  <input type="text" name="search" placeholder="Search..">
 
 <button class="button"><span>Delete</span></button>
 	</form>
