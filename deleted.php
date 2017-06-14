@@ -12,6 +12,18 @@ $toDelete = pg_query($pg_conn, "SELECT sfid, Name, isactive, country__c, state__
 
 $res = pg_delete($pg_conn, 'post_log', $toDelete);
 
+if($toDelete){
+
+echo "Record found!";
+  
+  while ($row = pg_fetch_row($toDelete)) {
+  echo "<tr>";
+  echo "<td>$row[0]</td>". "<td>$row[1]</td>". "<td>$row[2]</td>". "<td>$row[3]</td>". "<td>$row[4]</td>";
+  echo "</tr>";
+}
+  
+}
+
 if (!$res) {
   echo "Record not found";
   exit;
