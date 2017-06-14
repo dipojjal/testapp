@@ -20,7 +20,7 @@ $varSearchedItem= $_POST['search'];
 
   echo"<div class=\"panel panel-default\">";
   
-  echo "<div class=\"panel-heading\"><center><h1>Searched Products for:".$varSearchedItem."</h1></center></div>";
+  echo "<div class=\"panel-heading\"><center><h1>Searched Products for: ".$varSearchedItem."</h1></center></div>";
   echo "<div class=\"panel-body\">";
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
