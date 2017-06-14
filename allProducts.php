@@ -8,7 +8,7 @@
 <?php
 function pg_connection_string_from_database_url() {
   extract(parse_url($_ENV["DATABASE_URL"]));
-  return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
+  return "user=$user password=$pass host=$host dbname=" . substr($path, 1);
 }
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
  $result = pg_query($pg_conn, "SELECT sfid, Name, isactive, country__c, state__c FROM salesforce.Product2");
