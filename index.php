@@ -8,8 +8,8 @@
    
   <fieldset>
     <h1 class="fs-heading" >Login to your account</h1>
-    <input type="text" name="email" placeholder=" Username"/><br/>
-    <input type="password" name="pass" placeholder="Password" /><br/>
+    <input type="text" name="uname" placeholder=" Username"/><br/>
+    <input type="password" name="pwd" placeholder="Password" /><br/>
     <input type="submit" name="Login" class="next action-button" value="Submit" /> <br/> <br/>
     <hr>
     <br/> 
