@@ -81,15 +81,15 @@ body {
 
 </style>
 
-<body background="C:\Users\an322069\Desktop\pic\i.jpg">
+<body>
 <div>
-<form>
+<form name="search-prod" action="searchedProds.php" method="POST">
 <fieldset>
     <legend><h1>Search Product</h1></legend>
 	<div>
 <b>Product ID</b>
 
-  <input type="text" id="s" name="search" placeholder="Search..">
+  <input type="text" name="search" placeholder="Search...">
 
 <button class="button"><span><b>Search</b></span></button>
 </fieldset>
