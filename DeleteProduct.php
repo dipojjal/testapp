@@ -9,7 +9,7 @@ div {
    
     background: #FFFFFF;
     padding: 25px;
-	background-image: url('C:\Users\an322069\Desktop\pic\i.jpg');
+	background-image: url('bg.jpg');
 	margin-top: 20px;
 	opacity: 0.9;
 }
