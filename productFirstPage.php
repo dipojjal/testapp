@@ -120,7 +120,7 @@ function pg_connection_string_from_database_url() {
 
     <form name="pricebook-prods" action="priceBookProduct.php" method="POST">
         <button class="button"  style="background-color: #CBEB6A;">
-        <span> <i class="fa fa-usd" aria-hidden="true"></i> Price Book</span>
+        <span> <i class="fa fa-usd" aria-hidden="true"></i> Product catalogue</span>
     </button></br></br>
     </form>
 
