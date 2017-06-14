@@ -7,10 +7,10 @@
  
 body{
 background-image:url("bg.jpg");
- -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
-         -o-background-size: 100% 100%;           /* Opera 9.5 */
-    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
-            background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+ -moz-background-size: 100% 100%;           
+         -o-background-size: 100% 100%;           
+    -webkit-background-size: 100% 100%;           
+            background-size: 100% 100%;           
 
        -moz-border-image: url("bg1.jpg") 0;    /* Gecko 1.9.1 (Firefox 3.5) */
 }
