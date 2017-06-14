@@ -92,13 +92,15 @@ body {
     <legend><h1>Delete Product</h1></legend>
 	<div>
 <b>Product ID</b>
-
+<form name="delete-prod" action="deleted.php" method="POST">
   <input type="text" id="s" name="search" placeholder="Search..">
 
 <button class="button"><span>Delete</span></button>
+	</form>
 </fieldset>
 
 </form>
+	
 </div>
 </body>
 </html>
