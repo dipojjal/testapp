@@ -81,6 +81,7 @@ function pg_connection_string_from_database_url() {
     
     else{
     echo "User not found";
+    exit;
     }
     ?>
     
