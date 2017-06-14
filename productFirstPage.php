@@ -61,6 +61,28 @@ background-image:url("bg.jpg");
 </head>
 
 <body>
+    
+    <?php
+function pg_connection_string_from_database_url() {
+  extract(parse_url($_ENV["DATABASE_URL"]));
+  return "user=$user password=$pass host=$host dbname=" . substr($path, 1);
+}
+    $username = $_POST['uname'];
+    $password = $_POST['pwd'];
+    
+  $pg_conn = pg_connect(pg_connection_string_from_database_url());
+  $searchedProds = pg_query($pg_conn, "SELECT Id, sfid FROM salesforce.Heroku_User__c where username__c= '$username' && password__c= '$password'");
+
+
+    if(!$searchedProds){
+    echo "User not found";
+    }
+    
+    else{
+    echo "User found";
+    }
+    ?>
+    
 <center>
 <h1>Product Management</h1>
 <br /><br />
