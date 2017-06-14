@@ -84,6 +84,7 @@ body {
 <body>
 <div>
 <form name="search-prod" action="searchedProds.php" method="POST">
+
 <fieldset>
     <legend><h1>Search Product</h1></legend>
 	<div>
@@ -91,7 +92,7 @@ body {
 
   <input type="text" name="search" placeholder="Search...">
 
-<button class="button"><span><b>Search</b></span></button>
+<button class="button" type="submit"><span><b>Search</b></span></button>
 </fieldset>
 
 </form>
