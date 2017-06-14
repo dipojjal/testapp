@@ -70,11 +70,18 @@ function pg_connection_string_from_database_url() {
     $password = $_POST['pwd'];
     
   $pg_conn = pg_connect(pg_connection_string_from_database_url());
-  $searchedUser = pg_query($pg_conn, "SELECT Id FROM salesforce.Heroku_User__c where (username__c= '$username' AND password__c ='$password')");
-
-    $rows = pg_num_rows($searchedUser);
+  $searchedUser = pg_query($pg_conn, "SELECT Id FROM salesforce.Heroku_User__c where (username__c='$username' AND password__c='$password')");
+    
+    if(pg_num_rows($searchedUser)==0){
+    
+    $searchedUser= pg_query($pg_conn, "SELECT Id FROM salesforce.Heroku_User__c where username__c='$username' ");
+        
+    };
+    
+    $rows=pg_num_rows($searchedUser);
 
     if($rows==0){
+        
     echo "<center> <h1>User not found</h1> </center><br /><br />";
         echo "<form name=\"goBack\" action=\"index.php\" method=\"POST\">";
         echo "<button type=\"submit\" class=\"btn btn-danger\">Go Back</button>";
