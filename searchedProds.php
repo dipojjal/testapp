@@ -25,7 +25,7 @@ $varSearchedItem= $_POST['search'];
   echo "<div class=\"panel-body\">";
   echo "<div class=\"container\"> <table class=\"table table-striped\">";
   echo "<tr>";
-  echo "<th>ID</th>"
+  echo "<th>ID</th>";
   echo "<th>SALESFORCE ID</th>";
   echo "<th>NAME</th>";
   echo "<th>PRODUCT CODE</th>";
