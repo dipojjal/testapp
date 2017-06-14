@@ -95,7 +95,7 @@ body {
 <form name="delete-prod" action="deleted.php" method="POST">
   <input type="text" name="search" placeholder="Search..">
 
-<input class="button" type="submit"><span>Delete</span></input>
+<button class="button" type="submit"><span>Delete</span></button>
 	</form>
 </fieldset>
 
